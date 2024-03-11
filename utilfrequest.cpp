@@ -103,12 +103,12 @@ bool requestTypeMayHaveBody(RequestType currentRequestType){
 
     switch(currentRequestType){
     case UtilFRequest::RequestType::GET_OPTION:
-    case UtilFRequest::RequestType::DELETE_OPTION:
     case UtilFRequest::RequestType::HEAD_OPTION:
     {
         mayHaveBody = false;
         break;
     }
+    case UtilFRequest::RequestType::DELETE_OPTION:
     case UtilFRequest::RequestType::POST_OPTION:
     case UtilFRequest::RequestType::PUT_OPTION:
     case UtilFRequest::RequestType::PATCH_OPTION:
