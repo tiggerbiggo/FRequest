@@ -1,5 +1,5 @@
 name: FRequest Build
-on: [push]
+on: workflow_dispatch
 jobs:
   Build-windows:
     runs-on: windows-2022
